@@ -1,0 +1,65 @@
+@import '@/styles/base/breakpoints';
+
+.footer{
+
+    margin-top: -2rem;
+
+    @include min-md {
+        margin-top : initial;
+    }
+
+    .grid-logo {
+
+        img {
+            max-width: 200px;
+        }
+
+        order : 2;
+        text-align: center;
+
+        @include min-md {
+            order : 1;
+            text-align: left;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+    }
+
+    .grid-contact-info {
+
+        order : 1;
+        @include min-md {
+            order : 2;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        
+        .contact-info {
+            @include min-lg {
+                gap : 1.5rem;
+                display : grid;
+                grid-template-columns: 1fr 1fr;
+    
+            }
+    
+        }
+
+        hgroup {
+            
+            @include min-md {
+                margin-bottom : 0;
+            }
+        }
+
+    }
+
+
+    
+
+}

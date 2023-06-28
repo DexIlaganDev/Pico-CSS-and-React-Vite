@@ -1,0 +1,31 @@
+@import '@/styles/base/breakpoints';
+
+.hero-section {
+
+    @include min-md {
+        padding-block : 4rem;
+    }
+
+}
+
+.second-grid {
+
+    text-align: right;
+
+    > div {
+
+  
+       
+
+        img {
+        
+            @include min-sm {
+                
+            }
+        }
+
+    }
+    
+    
+
+}

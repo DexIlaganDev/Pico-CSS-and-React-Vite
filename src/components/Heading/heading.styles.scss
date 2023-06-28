@@ -1,0 +1,31 @@
+@import '@/styles/base/breakpoints';
+
+h2[class*="heading-"] {
+    color : var(--accent);
+}
+
+.heading {
+
+    &-main {
+        text-align: center;
+
+        font-weight: 400;
+        line-height : 1;
+
+        @include min-md {
+            font-size: 60px;
+        }
+    }
+
+     &-sub {
+        text-align: center;
+
+        font-weight: 400;
+        line-height : 1;
+
+        @include min-md {
+            font-size: 48px;
+        }
+    }
+
+}

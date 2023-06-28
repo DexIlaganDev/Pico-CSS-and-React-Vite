@@ -1,0 +1,15 @@
+.hero-layout {
+
+    padding-top : 5rem;
+
+    @include min-md {
+        padding-top :0;
+    }
+
+    align-items: center;
+
+    .subheading {
+        text-align: center;
+    }
+
+}
